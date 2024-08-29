@@ -28,7 +28,7 @@ stages:
               Expand-Archive -Path $zipFile -DestinationPath $toolPath -Force            
 
               Write-Host "##[debug]Downloading Dataset default rules"
-              $downloadUrl = "https://raw.githubusercontent.com/microsoft/Analysis-Services/master/BestPracticeRules/BPARules.json"
+              $downloadUrl = "https://raw.githubusercontent.com/microsoft/Analysis-Services/master/BestPracticeRules/Spanish/BPARules.json"
               Invoke-WebRequest -Uri $downloadUrl -OutFile "$tempPath\Rules-Dataset.json"     
         - task: PowerShell@2
           displayName: 'Run Dataset Rules'
