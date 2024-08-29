@@ -617,7 +617,7 @@
     "Name": "[Formato] Proporcionar cadena de formato para medidas",
     "Category": "Formato",
     "Description": "Las medidas visibles deben tener su propiedad de cadena de formato asignado",
-    "Severity": 3,
+    "Severity": 2,
     "Scope": "Measure",
     "Expression": "not IsHidden \r\nand not Table.IsHidden \r\nand string.IsNullOrWhitespace(FormatString)",
     "CompatibilityLevel": 1200
